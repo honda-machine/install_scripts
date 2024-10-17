@@ -1,0 +1,4 @@
+# download steam_latest.dev from https://store.steampowered.com/about/
+sudo apt install curl
+sudo dpkg -i Downloads/steam_latest.deb
+steam

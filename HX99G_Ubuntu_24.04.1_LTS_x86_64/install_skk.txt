@@ -1,0 +1,3 @@
+sudo apt install ibus-skk
+sudo sed -i /usr/share/ibus/component/skk.xml -e "s/<layout>jp</<layout>us</"
+
