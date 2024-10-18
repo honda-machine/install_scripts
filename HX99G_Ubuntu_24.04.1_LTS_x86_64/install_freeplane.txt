@@ -1,0 +1,5 @@
+download freeplane_bin-1.12.6.zip from https://sourceforge.net/projects/freeplane/files/freeplane%20stable
+sudo apt install openjdk-21-jdk
+unzip freeplane_bin-1.12.6.zip
+cd freeplane-1.12.6/
+FREEPLANE_JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64/ ./freeplane.sh
