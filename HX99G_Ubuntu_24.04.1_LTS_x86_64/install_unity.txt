@@ -1,0 +1,14 @@
+# https://docs.unity3d.com/hub/manual/InstallHub.html
+wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+sudo apt update
+sudo apt-get install unityhub
+
+echo "abi <abi/4.0>,
+include <tunables/global>
+profile unityhub /opt/unityhub/unityhub-bin flags=(unconfined) {
+    userns,
+    include if exists <local/unityhub>
+}" | sudo tee /etc/apparmor.d/unityhub
+
+sudo systemctl restart apparmor.service
