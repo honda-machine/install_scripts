@@ -1,0 +1,4 @@
+sudo apt install gnome-tweaks
+gnome-tweaksを起動
+キーボード > 追加のレイアウトオプション > Ctrl position > Ctrl と Caps Lock を入れ替える
+
