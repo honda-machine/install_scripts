@@ -3,3 +3,4 @@ git clone https://github.com/honda-machine/install_scripts.git
 git config --global user.email "$EMAIL"
 git config --global user.name "$USER"
 git config --global core.editor "vim"
+git config --global credential.helper store
