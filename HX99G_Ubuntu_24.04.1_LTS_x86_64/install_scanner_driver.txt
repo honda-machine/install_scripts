@@ -1,0 +1,10 @@
+# download driver from Epson website
+1. http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
+2. search for "ew-052a"
+3. download the driver for "Linux" (WE-052S Series Scanner Driver Linux 6.7.70.0 Epson Scan 2)
+# install driver
+tar xvzf epsonscan2-bundle-6.7.70.0.x86_64.deb.tar.gz
+cd epsonscan2-bundle-6.7.70.0.x86_64.deb
+sh install.sh
+# invoke application
+choose Epson Scan 2 from the application menu
