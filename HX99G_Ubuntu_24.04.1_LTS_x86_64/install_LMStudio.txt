@@ -1,0 +1,5 @@
+#download from https://lmstudio.ai/
+curl https://installers.lmstudio.ai/linux/x64/0.3.22-2/LM-Studio-0.3.22-2-x64.AppImage
+chmod +x ./LM-Studio-0.3.22-2-x64.AppImage
+./LM-Studio-0.3.22-2-x64.AppImage --no-sandbox
+
