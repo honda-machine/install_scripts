@@ -1,0 +1,5 @@
+sudo swapon --show
+sudo swapoff /swap.img
+sudo fallocate -l 64G /swap.img
+sudo mkswap /swap.img
+sudo swapon /swap.img
