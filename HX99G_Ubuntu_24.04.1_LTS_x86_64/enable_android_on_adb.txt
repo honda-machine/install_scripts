@@ -1,0 +1,12 @@
+lsusb 
+sudo udevadm monitor --kernel --udev
+ADB=~/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platform-tools/adb
+sudo apt update
+sudo apt install -y android-sdk-platform-tools-common 
+sudo udevadm control --reload-rules
+sudo udevadm trigger 
+id -nG | grep -x plugdev
+$ADB kill-server
+sudo $ADB kill-server
+$ADB start-server
+$ADB devices -l
