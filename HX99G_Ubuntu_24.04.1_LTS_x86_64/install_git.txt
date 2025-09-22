@@ -4,3 +4,4 @@ git config --global user.email "$EMAIL"
 git config --global user.name "$USER"
 git config --global core.editor "vim"
 git config --global credential.helper store
+sudo apt install git-lfs
